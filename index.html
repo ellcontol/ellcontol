@@ -3,35 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ellcontol</title>
+    <title>Website Modern</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">ellcontol</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Tentang</a></li>
-                <li><a href="#">Kontak</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <button id="dark-mode-toggle">🌙</button>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">ModernWeb</div>
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#features">Fitur</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <h1>Selamat Datang</h1>
+        <p>Website Modern dengan Desain Elegan</p>
+        <a href="#features" class="btn">Jelajahi</a>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Selamat Datang di Website ellt</h1>
-            <p>KONTOL.</p>
-            <a href="#" class="cta-button">Pelajari Lebih Lanjut</a>
-        </section>
-    </main>
+    <!-- About Section -->
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <p>Kami menyediakan desain web yang responsif, modern, dan user-friendly.</p>
+    </section>
 
-    <footer>
-        <p>© 2025 Sann. Semua Hak Dilindungi.</p>
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Fitur</h2>
+        <div class="features-container">
+            <div class="feature-card">
+                <h3>Desain Responsif</h3>
+                <p>Website yang bisa diakses di berbagai perangkat.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Efek Animasi</h3>
+                <p>Transisi yang halus untuk pengalaman pengguna lebih baik.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Mode Gelap</h3>
+                <p>Warna hitam dan abu-abu untuk tampilan elegan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2025 ModernWeb. Semua Hak Dilindungi.</p>
     </footer>
 </body>
-  </html>
-  
+</html>
