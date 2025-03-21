@@ -1,35 +1,38 @@
-/* Reset dan Font */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Warna Tema */
 body {
-    background-color: #f4f4f4;
-    color: #333;
-    transition: 0.3s;
+    background: #1a1a1a;
+    color: #fff;
 }
 
 /* Navbar */
-header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
     background: #222;
-    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .nav-links {
-    display: flex;
     list-style: none;
+    display: flex;
 }
 
 .nav-links li {
@@ -37,73 +40,106 @@ header {
 }
 
 .nav-links a {
-    color: white;
     text-decoration: none;
-    font-size: 1em;
-}
-
-.hamburger {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-/* Dark Mode */
-.dark-mode {
-    background-color: #222;
     color: white;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #aaa;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
 }
 
 /* Hero Section */
-.hero {
+header {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
+    background: linear-gradient(135deg, #333, #000);
 }
 
-.hero h1 {
-    font-size: 2.5em;
+header h1 {
+    font-size: 42px;
     margin-bottom: 10px;
 }
 
-.cta-button {
+.btn {
     display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
     background: white;
-    color: #333;
+    color: black;
     text-decoration: none;
+    font-weight: bold;
     border-radius: 5px;
-    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: gray;
+}
+
+/* About Section */
+#about, #features {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #333;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background: #222;
-    color: white;
+    margin-top: 30px;
 }
 
-/* Responsive */
+/* Responsif */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #222;
         position: absolute;
         top: 60px;
         right: 0;
-        width: 200px;
+        background: #222;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
         padding: 10px;
     }
 
     .nav-links.active {
         display: flex;
     }
-
-    .hamburger {
-        display: block;
-    }
-      }
-  
+}
