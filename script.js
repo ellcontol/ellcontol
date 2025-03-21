@@ -19,3 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkScroll);
     checkScroll(); // Jalankan saat halaman dimuat
 });
+function openPage(page) {
+    window.location.href = page;
+}
