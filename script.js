@@ -1,12 +1,4 @@
-// Toggle Menu
 function toggleMenu() {
-    document.querySelector('.nav-links').classList.toggle('active');
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
 }
-
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById("dark-mode-toggle");
-
-darkModeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-    darkModeToggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
-});
