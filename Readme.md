@@ -1,5 +1,7 @@
 Nama Lisensi: ellcontol v2.0
+
 Diterbitkan oleh: Sann
+
 Tanggal: 21-03-2025
 
 1. Hak Penggunaan
