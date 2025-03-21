@@ -22,3 +22,20 @@ document.addEventListener("DOMContentLoaded", function () {
 function openPage(page) {
     window.location.href = page;
 }
+// Fungsi untuk membuka pop-up otomatis
+window.onload = function() {
+    document.getElementById("popupModal").style.display = "block";
+};
+
+// Fungsi untuk menutup pop-up
+function closePopup() {
+    document.getElementById("popupModal").style.display = "none";
+}
+
+// Menutup pop-up jika klik di luar area pop-up
+window.onclick = function(event) {
+    let modal = document.getElementById("popupModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
